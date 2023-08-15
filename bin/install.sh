@@ -1,6 +1,12 @@
 #!/bin/sh -e
-VERSION=0.16.0
-RELEASE=node_exporter-${VERSION}.linux-amd64
+VERSION=1.6.1
+
+if [ "$(uname -m)" = "aarch64" ]; then
+    ARCHITECTURE=arm64
+else
+    ARCHITECTURE=amd64
+fi
+RELEASE=node_exporter-${VERSION}.linux-${ARCHITECTURE}
 
 _check_root () {
     if [ $(id -u) -ne 0 ]; then

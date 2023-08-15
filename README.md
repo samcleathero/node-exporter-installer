@@ -1,6 +1,6 @@
-# node-exporter-installer [![CircleCI](https://circleci.com/gh/ClouDesire/node-exporter-installer.svg?style=svg)](https://circleci.com/gh/ClouDesire/node-exporter-installer)
+# node-exporter-installer
 
-Automatically download [node_exporter](https://github.com/prometheus/node_exporter) latest tar.gz archive, unpack and configure for automatic startup (via systemd or upstart) on various platforms, tested via [test-kitchen](https://github.com/ClouDesire/node-exporter-installer/blob/master/test-cookbook/.kitchen.yml) and [inspec](https://github.com/ClouDesire/node-exporter-installer/blob/master/test-cookbook/test/integration/default/default_test.rb):
+Automatically download [node_exporter](https://github.com/prometheus/node_exporter) latest tar.gz archive, unpack and configure for automatic startup (via systemd or upstart) on various platforms:
 
 * Ubuntu 16.04+
 * Debian 9
@@ -10,5 +10,5 @@ Automatically download [node_exporter](https://github.com/prometheus/node_export
 ## Usage
 
 ```bash
-curl -sSL https://cloudesire.github.io/node-exporter-installer/install.sh | sudo sh
+curl -sSL https://github.com/samcleathero/node-exporter-installer/raw/master/bin/install.sh | sudo sh
 ```
